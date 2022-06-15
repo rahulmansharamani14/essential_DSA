@@ -36,12 +36,30 @@ void findMiddleElement(Node* head){
 }
 
 
+void findMiddleElementUsingTwoPointer(Node* head){
+    if(head == NULL){
+        return;
+    }
+
+    Node* slow = head;
+    Node* fast = head;
+
+    while(fast!=NULL && fast->next != NULL){
+        slow = slow->next; // slow pointer travel 1 element forward
+        fast = fast->next->next; // fast pointer travel 2 elements forward
+    }
+
+    cout<< slow->data;
+}
+
+
 int main(){
     Node *head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(30);
     
-    findMiddleElement(head);
+    findMiddleElement(head); // Normal Approach - 2 traversal is required
+    findMiddleElementUsingTwoPointer(head); // Effective Approach - Only 1 traversal is required
     
     return 0;
 }
