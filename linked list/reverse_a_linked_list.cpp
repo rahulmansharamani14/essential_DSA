@@ -32,7 +32,11 @@ Node *reverseListUsingArray(Node *head){
 }
 
 Node *reverseListIterative(Node *head){
-
+    // Only one Traversal is required
+    // We cahnge only the pointers not the actual data structure
+    // Time Complexity = O(n)
+    // Space Complexity = O(1)
+    
     if(head == NULL){
         return NULL;
     };
