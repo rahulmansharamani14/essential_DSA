@@ -13,7 +13,7 @@ struct Node {
         prev = NULL;
         next = NULL;
     }
-}
+};
 ```
 
 ### Advantages
