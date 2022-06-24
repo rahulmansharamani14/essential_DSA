@@ -19,3 +19,13 @@ Note: Time complexity of operations like push(), pop(), peek(), isEmpty() are O(
 
 1. Underflow -> When pop() or peek() called on empty stack
 2. Overflow -> When push() called on full stack
+
+### Applications of Stack
+
+-   Function Calls
+-   Checking for Balanced paranthesis
+-   Reversing Items
+-   Infix to Prefix/Postfix conversions
+-   Evaluation of Prefix/Postfix expressions
+-   Stock span problems and it's variations
+-   Undo/Redo or Forward/Backward

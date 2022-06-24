@@ -1,6 +1,12 @@
 /*
 This is the linked list implementation of stack where the stack grows and shrinks 
 according to the needs at realtime.
+
+Here, we do all the operations from starting of the linked list where head is given.
+We could perform operations from the other end of the linked list if we maintain tail pointer.
+
+
+Note: Time Complexity of all the operations is O(1).
 */
 
 #include <iostream>
