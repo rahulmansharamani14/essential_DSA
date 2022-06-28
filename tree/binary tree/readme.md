@@ -22,3 +22,11 @@ struct Node{
     }
 };
 ```
+
+### Tree traversal
+
+1. Breadth first Traversal (level order)
+2. Depth First Traversal
+    - Inorder traversal - left subtree, root, right subtree
+    - Preorder traversal - root, left subtree, right subtree
+    - Postorder traversal - left subtree, right subtree, root
