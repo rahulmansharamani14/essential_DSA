@@ -13,6 +13,14 @@ Tree data structure is a collection of data (Node) which is organized in hierarc
 -   internal node - the node which has atleast one child
 -   degree - the total number of children of a node
 
+### Tree traversal
+
+1. Breadth first Traversal (level order)
+2. Depth First Traversal
+    - Inorder traversal - left subtree, root, right subtree
+    - Preorder traversal - root, left subtree, right subtree
+    - Postorder traversal - left subtree, right subtree, root
+
 ### Applications of Tree Data Structure
 
 -   To represnt hierarchical data
