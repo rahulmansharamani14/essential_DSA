@@ -1,3 +1,9 @@
+/*
+Time Complexity - O(h) for both recursive and iterative solution
+Auxiliary Space for recursion - O(h)
+Auxiliary Space for iterative - O(1)
+
+*/
 #include <iostream>
 
 using namespace std;
@@ -24,6 +30,19 @@ bool searchNode(Node *root, int x){
     }
 }
 
+bool searchNodeIterative(Node *root, int x){
+    while(root != NULL){
+        if(root->key == x){
+            return true;
+        }else if(root->key > x){
+            root = root ->left;
+        }else{
+            root = root ->right;
+        }
+    }
+    return false;
+}
+
 int main(){
 	Node *root=new Node(15);
 	root->left=new Node(5);
@@ -33,7 +52,7 @@ int main(){
 	root->right->left->left=new Node(16);
 	root->right->right=new Node(80);
 
-    if(searchNode(root,80)){
+    if(searchNodeIterative(root,80)){
         cout << "Found"<<endl;
     }else{
         cout << "Not Found"<<endl;
